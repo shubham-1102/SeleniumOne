@@ -3,11 +3,14 @@ package com.seleniumproject.seleniumProject;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.idealized.Javascript;
 
 public class flipkartsinclass {
 
@@ -37,6 +40,10 @@ public class flipkartsinclass {
 			}
 		
 		}
+		Thread.sleep(4000);
+		JavascriptExecutor jss = (JavascriptExecutor) driver;
+		jss.executeScript("window.scrollBy(0,3000)", "");
+		
 		Thread.sleep(60000);
 		driver.quit();
 		
