@@ -1,5 +1,6 @@
 package task1;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -30,7 +31,7 @@ public class pastEvents {
 		password.sendKeys("secret_sauce",Keys.ENTER);
 		
 		driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]")).click();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		driver.findElement(By.linkText("About")).click();
 		
 		Thread.sleep(3000);
@@ -38,20 +39,21 @@ public class pastEvents {
 		jss.executeScript("window.scrollBy(0,6000)", "");
 		
 		driver.findElement(By.linkText("Events")).click();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		
 		jss.executeScript("window.scrollBy(0,800)", "");
 		driver.findElement(By.xpath("//*[@id=\"onetrust-close-btn-container\"]/button")).click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
+		Thread.sleep(5000);
 		List<WebElement> data=driver.findElements(By.tagName("h3"));
-		Thread.sleep(2000);
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		for(WebElement i : data) {
 				System.out.println(i.getText());
 		}
 			
-		
-		Thread.sleep(30000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.quit();
 	}
 
