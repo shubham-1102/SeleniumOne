@@ -41,6 +41,7 @@ public class flipkartsinclass {
 		
 		}
 		Thread.sleep(4000);
+		//Scroll Bar
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("window.scrollBy(0,3000)", "");
 		
