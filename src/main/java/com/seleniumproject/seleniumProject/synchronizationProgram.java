@@ -14,6 +14,7 @@ public class synchronizationProgram {
 		
 	    //Browser Setup
 		co.setBinary("C:\\Users\\shupatil\\Downloads\\chrome-win64\\chrome.exe");
+		co.addArguments("--disable-notification");
 		WebDriver driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		WebDriver driver1 = new EdgeDriver();
