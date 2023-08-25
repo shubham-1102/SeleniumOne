@@ -42,10 +42,12 @@ public class explicit_wait {
 		 driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span")).click();
 		 //wait.until(ExpectedConditions.elementToBeClickable());
 		 
+		 //Search box in admin pannel
 		 driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input")).sendKeys("admin",Keys.ENTER);
 		 JavascriptExecutor jss = (JavascriptExecutor) driver;
 		 jss.executeScript("window.scrollBy(0,1000)", "");
 		 
+		 //click on log out
 		 driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/img")).click();
 		 driver.findElement(By.linkText("Logout")).click();
 		
