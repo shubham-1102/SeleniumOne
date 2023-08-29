@@ -10,6 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class pastEvents {
 
@@ -31,7 +34,9 @@ public class pastEvents {
 		password.sendKeys("secret_sauce",Keys.ENTER);
 		
 		driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]")).click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(3));
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("About")));
 		driver.findElement(By.linkText("About")).click();
 		
 		Thread.sleep(3000);
