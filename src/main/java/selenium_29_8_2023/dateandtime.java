@@ -39,7 +39,7 @@ public class dateandtime {
 		
 		
 		Thread.sleep(30000);
-		driver.quit();
+		//driver.quit();
 	}
 
 }
