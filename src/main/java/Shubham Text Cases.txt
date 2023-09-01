@@ -1,0 +1,100 @@
+1 Test Case :
+Open https://parabank.parasoft.com/
+Click Register & Fill Form.
+Enter Login Info.
+Open New Account 
+Select drop down  Account would you like to open saving 
+Click Open New Account
+Logout
+-----------------------------------------------------------------------------------------------------------------------
+2 Test Case:
+Open https://parabank.parasoft.com/
+Login
+Transfer Fund
+Enter Valid Amount
+Select to account
+click Transfer
+Click on FInd Transferox
+Verify Transaction using transaction date , enter date in Find by Date:box
+then click Find transaction
+Verify transaction Amount in that table.
+Logout
+-----------------------------------------------------------------------------------------------------------------------
+3 Test Case
+Open Google.com
+Then open a new tab by making use of Key class. By combination of CTRL + t key a new browser tab will be opened.
+Open Gmail.com in that tab.
+Perform some actions on Gmail sign in page.
+Switch back to google.com tab by pressing Ctrl + \t
+Now enter some keywords in google search box
+Close the browsers.
+-----------------------------------------------------------------------------------------------------------------------
+4 Test Case
+Open https://www.saucedemo.com/
+Login into Page
+Select More than 2 Product 
+Go to cart
+Click Checkout Button
+Fill Form for checkout.
+Verify total cost and Total added product cost.
+Close Browser.
+-----------------------------------------------------------------------------------------------------------------------
+5 Test Case
+1. Launch browsers of your choice like, firefox, chrome, etc., using Selenium WebDriver.
+2. Open website url - https://godaddy.com/
+3. Maximize browser window.
+4. Set timeout using the implicit wait command of Selenium Webdriver.
+5. Click on the first link from the menu, it will open up the sub-menu with multiple sub-menu links.
+6. Click on the first sub-menu link.
+7. Get the page title and validate it.
+8. Go back to the home page by clicking on the GoDaddy logo.
+9. Repeat steps 5 to 8 and cover all the menu and sub-menu items present one by one.
+---------------------------------------------------------------------------------------------------------------------
+6 Test Case
+1. Launch browser of your choice like, firefox, chrome, etc., using Selenium WebDriver.
+2. Open website url - https://godaddy.com/
+3. Maximize browser window.
+4. Set timeout using the implicit wait command of Selenium Webdriver.
+5. Click on the first menu link, which is 'Domains'. It will open up a sub-menu, click on the 'Domain Name Search' link from the sub-menu.
+6. Get the value of the title of the 'Domain Name Search' page using Selenium Webdriver's command in your script and print it.
+7. We'll match the value fetched in step 7 with the expected value, if it's matched then proceed to the next step either failing the test case.
+8. Verify that the search box is present on the page and it's enabled by using selenium commands.
+9. Verify that the "Buy It" button is available along with the search box.
+10. Enter some test value in the search box, like "my domain" and click on the "Buy It" button.
+11. If the domain is available then verify that the "Add to Cart" button is present alongside the domain name.
+12. Verify that the price of the domain is also displayed alongside the domain name.
+--------------------------------------------------------------
+Test 7
+
+1 Open https://demo.applitools.com/
+2 Click on Login
+3 Asseert Login
+4 fill the form
+5 
+
+
+----------------------------------------------------------
+Test 8
+1. Open https://automationintesting.online/
+2. Click on nav bar courses option 
+3. Click playwaight
+4. start , Pause ,Stop video.
+5. close 
+
+-----------------------------------------------------------
+Test 9
+1. Open https://automationintesting.online/
+2. Click on Sign Up
+3. Fill Form .
+4. Click on sign in
+5. close
+-------------------------------------------------------------
+Test 10
+1. open - https://the-internet.herokuapp.com/javascript_alerts
+2. click om clickfor js alert
+3. Assert alert
+4. click om clickfor js confirm
+5. click on okay
+6. click for js prompt
+7. Enter hello world
+8. click okay and pirnt the entered text on console
