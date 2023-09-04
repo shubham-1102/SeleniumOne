@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="methods">
+
   <test thread-count="5" name="Test">
+  <groups>
+  	<run>
+  		<include name="G1">
+  		</include>
+  	</run>
+  </groups>
     <classes>
-      <class name="com.seleniumproject.seleniumProject.NewTest1"/>
-     
-      <class name="com.seleniumproject.seleniumProject.AppTest"/>
-      
+     <!-- <class name="com.seleniumproject.seleniumProject.NewTest1"/>
+      <class name="com.seleniumproject.seleniumProject.NewTest2"/>-->
+      <class name="testng_assertion_4_9_2023.depends0n_classs"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
