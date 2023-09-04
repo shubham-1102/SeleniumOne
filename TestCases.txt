@@ -14,10 +14,7 @@ Transfer Fund
 Enter Valid Amount
 Select to account
 click Transfer
-Click on FInd Transferox
-Verify Transaction using transaction date , enter date in Find by Date:box
-then click Find transaction
-Verify transaction Amount in that table.
+assert "message"
 Logout
 -----------------------------------------------------------------------------------------------------------------------
 3 Test Case
@@ -35,8 +32,8 @@ Login into Page
 Select More than 2 Product 
 Go to cart
 Click Checkout Button
-Fill Form for checkout.
-Verify total cost and Total added product cost.
+Fill Form for checkout 
+Verify total cost 
 Close Browser.
 -----------------------------------------------------------------------------------------------------------------------
 5 Test Case
@@ -48,20 +45,15 @@ Close Browser.
 6. Click on the first sub-menu link.
 7. Get the page title and validate it.
 8. Go back to the home page by clicking on the GoDaddy logo.
-9. Repeat steps 5 to 8 and cover all the menu and sub-menu items present one by one.
+
 ---------------------------------------------------------------------------------------------------------------------
 6 Test Case
-1. Launch browser of your choice like, firefox, chrome, etc., using Selenium WebDriver.
-2. Open website url - https://godaddy.com/
-3. Maximize browser window.
-4. Click on the first menu link, which is 'Domains'. It will open up a sub-menu, click on the 'Domain Name Search' link from the sub-menu.
-6. Get the value of the title of the 'Domain Name Search' page using Selenium Webdriver's command in your script and print it.
-7. We'll match the value fetched in step 7 with the expected value, if it's matched then proceed to the next step either failing the test case.
-8. Verify that the search box is present on the page and it's enabled by using selenium commands.
-9. Verify that the "Buy It" button is available along with the search box.
-10. Enter some test value in the search box, like "my domain" and click on the "Buy It" button.
-11. If the domain is available then verify that the "Add to Cart" button is present alongside the domain name.
-12. Verify that the price of the domain is also displayed alongside the domain name.
+
+1. open- https://globalsqa.com/angularJs-protractor/BankingProject/#/login
+2. click on customer login
+3. select your name and click on login
+4. now print welcome message on console.
+
 --------------------------------------------------------------
 Test 7
 
@@ -69,12 +61,12 @@ Test 7
 2 Click on Login
 3 Asseert Login
 4 fill the form
-5 
+5 close the browser
 
 
 ----------------------------------------------------------
 Test 8
-1. Open https://automationintesting.online/
+1. Open https://letcode.in/test
 2. Click on nav bar courses option 
 3. Click playwaight
 4. start , Pause ,Stop video.
@@ -82,7 +74,7 @@ Test 8
 
 -----------------------------------------------------------
 Test 9
-1. Open https://automationintesting.online/
+1. Open https://letcode.in/test
 2. Click on Sign Up
 3. Fill Form .
 4. Click on sign in
