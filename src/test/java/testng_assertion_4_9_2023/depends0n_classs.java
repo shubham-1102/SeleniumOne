@@ -13,10 +13,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class depends0n_classs {
 	WebDriver driver;
-	@Test(groups = "G1")
+	@Test(groups = "G1", priority = 0)
   public void f() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.get("https://google.com");
   }
 	
@@ -26,9 +27,10 @@ public class depends0n_classs {
 		driver.findElement(By.name("q")).sendKeys("Depends",Keys.ENTER);
 	  }
 	
-	@Test(groups = "G1")//dependsOnMethods = {"f","f1"}
+	@Test(groups = "G1" , priority = 2)//dependsOnMethods = {"f","f1"}
 	  public void f2() {
-			driver.quit();
+	
+		driver.quit();
 	  }
 	
 }
