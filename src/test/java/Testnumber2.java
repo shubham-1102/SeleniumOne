@@ -10,6 +10,6 @@ public class Testnumber2 {
 	  WebDriverManager.chromedriver().setup();
 	  WebDriver driver = new ChromeDriver();
 	  
-	  driver.get("https://www.demoblaze.com/");
+	  driver.get("https://mvnrepository.com/artifact/org.testng/testng/7.8.0");
   }
 }

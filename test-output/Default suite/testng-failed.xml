@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testnumber2">
+      <class name="testng_assertion_4_9_2023.depends0n_classs">
         <methods>
           <include name="f"/>
+          <include name="f2"/>
+          <include name="f1"/>
         </methods>
-      </class> <!-- Testnumber2 -->
+      </class> <!-- testng_assertion_4_9_2023.depends0n_classs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
