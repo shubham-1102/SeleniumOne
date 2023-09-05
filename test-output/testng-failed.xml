@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="G1"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testng_assertion_4_9_2023.depends0n_classs">
+      <class name="unit_tesing_5_9_2023.test_parameters">
         <methods>
-          <include name="f2"/>
+          <include name="f"/>
+          <include name="befireMethod"/>
         </methods>
-      </class> <!-- testng_assertion_4_9_2023.depends0n_classs -->
+      </class> <!-- unit_tesing_5_9_2023.test_parameters -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
