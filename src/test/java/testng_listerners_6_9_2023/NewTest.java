@@ -1,7 +1,6 @@
-package unit_tesing_5_9_2023;
+package testng_listerners_6_9_2023;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Listeners;
 
 public class NewTest {
   @Test(groups = "groupA")
