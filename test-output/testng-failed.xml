@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="unit_tesing_5_9_2023.test_parameters">
+      <class name="demowebshop_8_9_2023.driverClassForDemoWebShop">
         <methods>
+          <include name="beforetestmethod"/>
           <include name="f"/>
-          <include name="befireMethod"/>
+          <include name="quitdriver"/>
         </methods>
-      </class> <!-- unit_tesing_5_9_2023.test_parameters -->
+      </class> <!-- demowebshop_8_9_2023.driverClassForDemoWebShop -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
