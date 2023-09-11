@@ -3,16 +3,16 @@
 <suite name="Suite" parallel="classes">
 
   <test thread-count="5" name="Test">
-  <groups>
+   <!-- <groups>
   	<run>
   		<include name="G1">
   		</include>
   	</run>
-  </groups>
+  </groups> -->
     <classes>
      <!-- <class name="com.seleniumproject.seleniumProject.NewTest1"/>
       <class name="com.seleniumproject.seleniumProject.NewTest2"/>-->
-      <class name="testng_assertion_4_9_2023.depends0n_classs"/>
+      <class name="Technical_Assessment_02.Login_and_logout_check"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
