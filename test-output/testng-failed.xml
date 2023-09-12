@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demowebshop_8_9_2023.driverClassForDemoWebShop">
+      <class name="Homework_11_9_2023.OpencartTestNG">
         <methods>
-          <include name="beforetestmethod"/>
+          <include name="aftertest"/>
           <include name="f"/>
-          <include name="quitdriver"/>
+          <include name="beforeTest"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- demowebshop_8_9_2023.driverClassForDemoWebShop -->
+      </class> <!-- Homework_11_9_2023.OpencartTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
