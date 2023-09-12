@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_assertion_4_9_2023.depends0n_classs">
+      <class name="Homework_11_9_2023.OpencartTestNG">
         <methods>
+          <include name="aftertest"/>
           <include name="f"/>
-          <include name="f2"/>
-          <include name="f1"/>
+          <include name="beforeTest"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- testng_assertion_4_9_2023.depends0n_classs -->
+      </class> <!-- Homework_11_9_2023.OpencartTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
