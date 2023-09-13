@@ -39,6 +39,7 @@ public class OpencartTestNG {
 	  objhomepage=new homepage(driver);
 	  String price1 = objhomepage.getPriceFromHome();
 	  objhomepage.clickiPhonee();
+	  
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	  objIphonePage=new IphonePage(driver);
 	  String price2 = objIphonePage.getPriceFromHome();
